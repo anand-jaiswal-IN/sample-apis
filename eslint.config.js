@@ -18,7 +18,23 @@ export default tseslint.config(
       },
     },
   },
-  perfectionist.configs['recommended-natural'],
+  // Keep perfectionist but override sorting behavior
+  {
+    plugins: {
+      perfectionist,
+    },
+    rules: {
+      // Disable alphabetical sorting for imports, objects, and types
+      'perfectionist/sort-imports': 'off',
+      'perfectionist/sort-objects': 'off',
+      'perfectionist/sort-named-exports': 'off',
+      'perfectionist/sort-named-imports': 'off',
+      'perfectionist/sort-enums': 'off',
+      'perfectionist/sort-intersection-types': 'off',
+      'perfectionist/sort-union-types': 'off',
+      'perfectionist/sort-modules': 'off',
+    },
+  },
   {
     // Global rules
     rules: {
