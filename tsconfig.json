@@ -5,10 +5,19 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "#*": ["src/*"]
+      "#*": [
+        "src/*"
+      ]
     },
-    "lib": ["es2022"]
+    "lib": [
+      "es2022"
+    ]
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
-  "exclude": ["dist"]
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }
